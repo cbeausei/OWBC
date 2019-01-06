@@ -63,7 +63,10 @@ for stat in general_stats:
     s = friends_data[friend]['stats']
     for x in stat[1:]:
       s = s[x]
-    line.append('%.2f' % s)
+    try:
+      line.append('%.2f' % s)
+    except:
+      line.append('N/A')
   nb = 0.0
   mean = 0.0
   for data in players_data:
