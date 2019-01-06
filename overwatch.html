@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="list" style="">
+      <tr>
+        <th>
+          <select id='select' onchange='changed()'></select>
+        </th>
+        <th>BC</th>
+        <th>Popof</th>
+        <th>Saroupille</th>
+        <th id='average'>Average</th>
+      </tr>
+    </table>
+  </body>
+  <script src='stats.js'></script>
+</html>
